@@ -8,7 +8,7 @@
 ## Nombres de ramas
 Ejemplos:
 - rama-header
-- rama-footer
+- rama-chiapas
 - rama-contacto
 
 ## Reglas para commits

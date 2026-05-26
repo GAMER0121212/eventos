@@ -8,7 +8,7 @@ Archivo afectado:
 - eventos.html
 
 Descripción:
-Se presentó un conflicto porque dos ramas modificaron la misma sección del archivo.
+Se generó un conflicto en css/style.css al intentar fusionar rama-contacto y rama-chiapas porque ambos modificaban los mismos estilos del contenedor. Se resolvió unificando las reglas de diseño en una sola estructura.
 
 Resolución:
 Se revisaron ambas versiones y se combinaron manualmente conservando:
@@ -20,4 +20,3 @@ Resultado:
 Conflicto resuelto y merge realizado correctamente.
 
 
-las ramas afectadas son contacto y chiapas 

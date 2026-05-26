@@ -4,7 +4,7 @@
 Sitio web estático desarrollado para la agencia Eventos Chiapas.
 
 ## Objetivo
-Aplicar el uso de Git y GitHub en un entorno colaborativo utilizando buenas prácticas de control de versiones.
+Aplicar el uso de Git y GitHub en un entorno colaborativo mediante ramas, commits, pull requests, resolución de conflictos y documentación del proyecto.
 
 ## Integrantes
 - Luis Adrian miranda Mendez
@@ -30,4 +30,4 @@ Aplicar el uso de Git y GitHub en un entorno colaborativo utilizando buenas prá
 | Luis Adrian miranda Mendez | Desarrollo principal | 100% |
 | Jiménez Sánchez Francisco Eduardo | Diseño | 100% |
 | Sosa Estrada Salvador Alejandro | Documentación | 100% |
-| Sara Elizabeth cruz Gómez  100%
+| Sara Elizabeth Cruz Gómez | Apoyo en desarrollo | 100% |

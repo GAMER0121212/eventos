@@ -15,5 +15,9 @@ Se revisaron ambas versiones y se combinaron manualmente conservando:
 - Diseño actualizado de eventos
 - Estilos del formulario de contacto
 
+
 Resultado:
 Conflicto resuelto y merge realizado correctamente.
+
+
+las ramas afectadas son contacto y chiapas 

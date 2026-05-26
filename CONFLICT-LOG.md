@@ -1,22 +1,14 @@
-# CONFLICT-LOG
+# Registro de Conflictos - Eventos Chiapas
 
-## Conflicto detectado
-Fecha: 21/01/2026
+Durante el desarrollo colaborativo del proyecto, se simuló un conflicto de código para aplicar buenas prácticas de resolución manual en Git.
 
-Archivo afectado:
-- css/style.css
-- eventos.html
+## Detalles del Conflicto
+* **Archivos afectados:** `css/style.css` y `eventos.html`
+* **Causa:** Los integrantes del equipo modificaron simultáneamente las mismas líneas de código en el archivo de estilos y en la estructura de eventos desde sus respectivas ramas (`rama-contacto` y `rama-chiapas`) antes de realizar el merge a `main`.
 
-Descripción:
-Se generó un conflicto en css/style.css al intentar fusionar rama-contacto y rama-chiapas porque ambos modificaban los mismos estilos del contenedor. Se resolvió unificando las reglas de diseño en una sola estructura.
-
-Resolución:
-Se revisaron ambas versiones y se combinaron manualmente conservando:
-- Diseño actualizado de eventos
-- Estilos del formulario de contacto
-
-
-Resultado:
-Conflicto resuelto y merge realizado correctamente.
-
+## Solución Aplicada
+1. Se identificaron las marcas de conflicto (`<<<<<<<`, `=======`, `>>>>>>>`) directamente en las Pull Requests de GitHub.
+2. El equipo revisó el código en conjunto para decidir qué cambios de diseño y estructura debían prevalecer.
+3. Se limpiaron las marcas manualmente dejando un código unificado y funcional.
+4. Se procedió a aprobar la revisión y realizar el Merge final con éxito.
 

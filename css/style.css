@@ -1,17 +1,129 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f4f4f4;
+/* RESET GENERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #0d6efd;
-    color: white;
-    padding: 15px;
+/* BODY */
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
 }
 
-nav a {
+/* HEADER */
+header{
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
     color: white;
-    margin-right: 15px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* TÍTULO */
+header h1{
+    font-size: 28px;
+    color: #38bdf8;
+    letter-spacing: 1px;
+}
+
+/* NAVBAR */
+nav{
+    display: flex;
+    gap: 20px;
+}
+
+/* LINKS */
+nav a{
+    color: white;
     text-decoration: none;
+    font-size: 16px;
+    padding: 10px 16px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+/* EFECTO HOVER */
+nav a:hover{
+    background: #38bdf8;
+    color: #0f172a;
+    transform: translateY(-2px);
+}
+
+/* MAIN */
+main{
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* TARJETAS */
+.card{
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+/* BOTONES */
+button{
+    background: #0d6efd;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+button:hover{
+    background: #2563eb;
+}
+
+/* FOOTER */
+footer{
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    header{
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav a{
+        display: block;
+        width: 100%;
+    }
+
+    main{
+        padding: 15px;
+    }
 }

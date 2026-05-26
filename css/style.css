@@ -1,17 +1,138 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f4f4f4;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-header {
-    background-color: #0d6efd;
-    color: white;
-    padding: 15px;
+body{
+    font-family:'Poppins', sans-serif;
+    background:linear-gradient(135deg,#f5f7fa,#e4ecf7);
+    color:#333;
+    min-height:100vh;
 }
 
-nav a {
-    color: white;
-    margin-right: 15px;
-    text-decoration: none;
+/* HEADER */
+
+header{
+    background:rgba(13,110,253,0.95);
+    backdrop-filter:blur(10px);
+    padding:18px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+header h1{
+    color:white;
+    font-size:28px;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+/* NAVBAR */
+
+nav{
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:500;
+    padding:10px 16px;
+    border-radius:8px;
+    transition:all 0.3s ease;
+    position:relative;
+}
+
+/* Hover elegante */
+
+nav a:hover{
+    background:rgba(255,255,255,0.15);
+    transform:translateY(-2px);
+}
+
+/* Línea animada */
+
+nav a::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:5px;
+    width:0%;
+    height:2px;
+    background:white;
+    transition:0.3s;
+    transform:translateX(-50%);
+}
+
+nav a:hover::after{
+    width:60%;
+}
+
+/* CONTENIDO */
+
+main{
+    padding:50px 10%;
+}
+
+section{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    margin-bottom:30px;
+    transition:0.3s;
+}
+
+section:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 30px rgba(0,0,0,0.12);
+}
+
+/* BOTONES */
+
+button{
+    background:#0d6efd;
+    color:white;
+    border:none;
+    padding:12px 22px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#0b5ed7;
+    transform:scale(1.03);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    main{
+        padding:30px 20px;
+    }
 }

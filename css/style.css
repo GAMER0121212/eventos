@@ -136,3 +136,61 @@ button:hover{
         padding:30px 20px;
     }
 }
+
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(135deg,#007bff,#00bfff);
+    color:white;
+    font-size:17px;
+    font-weight:600;
+    letter-spacing:0.5px;
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
+    transition:all 0.35s ease;
+    box-shadow:0 8px 20px rgba(0,123,255,0.35);
+}
+
+/* Brillo animado */
+
+button::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-75%;
+    width:50%;
+    height:100%;
+    background:rgba(255,255,255,0.25);
+    transform:skewX(-25deg);
+    transition:0.6s;
+}
+
+button:hover::before{
+    left:130%;
+}
+
+/* Hover */
+
+button:hover{
+    transform:translateY(-3px) scale(1.02);
+    box-shadow:0 12px 25px rgba(0,123,255,0.45);
+    background:linear-gradient(135deg,#0069d9,#00a2ff);
+}
+
+/* Click */
+
+button:active{
+    transform:scale(0.98);
+}
+
+/* Focus accesible */
+
+button:focus{
+    outline:none;
+    box-shadow:
+        0 0 0 4px rgba(0,123,255,0.2),
+        0 10px 25px rgba(0,123,255,0.35);
+}

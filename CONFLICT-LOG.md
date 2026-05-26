@@ -1,13 +1,19 @@
-# Registro de Conflictos
+# CONFLICT-LOG
 
-## Archivo afectado
-index.html
+## Conflicto detectado
+Fecha: 21/01/2026
 
-## Descripción del conflicto
-Dos ramas modificaron la misma línea del encabezado principal.
+Archivo afectado:
+- css/style.css
+- eventos.html
 
-## Solución aplicada
-Se combinaron ambos textos manualmente para conservar la información.
+Descripción:
+Se presentó un conflicto porque dos ramas modificaron la misma sección del archivo.
 
-## Resultado final
-<h2>Bienvenido a Eventos Chiapas 2026</h2>
+Resolución:
+Se revisaron ambas versiones y se combinaron manualmente conservando:
+- Diseño actualizado de eventos
+- Estilos del formulario de contacto
+
+Resultado:
+Conflicto resuelto y merge realizado correctamente.
